@@ -14,7 +14,7 @@ def upload_file():
         # Case 1: File upload
         if "file" in request.files:
             file = request.files["file"]
-            file_path = "uploads/" + file.filename
+            file_path = os.path.join(UPLOAD_FOLDER, file.filename)
             file.save(file_path)
 
             ext = file.filename.split(".")[-1].lower()

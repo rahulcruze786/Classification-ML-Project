@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Upload a File</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <button type="submit">Upload</button>
+    </form>
+
+    <h2>Or Provide an API URL</h2>
+    <form method="POST">
+      <input type="text" name="api_url" placeholder="https://api.example.com/data">
+      <button type="submit">Fetch</button>
+    </form>
+  </body>
+</html>

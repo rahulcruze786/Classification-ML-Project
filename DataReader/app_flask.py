@@ -4,7 +4,7 @@ from data_reader import DataReader
 import os
 
 read_app = Flask(__name__)
-UPLOAD_FOLDER = "uploads"
+UPLOAD_FOLDER = "/tmp/uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 @read_app.route("/", methods=["GET", "POST"])
 
